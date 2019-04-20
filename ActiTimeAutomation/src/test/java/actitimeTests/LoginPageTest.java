@@ -9,13 +9,12 @@ import org.testng.annotations.Test;
 
 import utilities.BaseClass;
 
-
 public class LoginPageTest extends BaseClass {
 
 	@BeforeMethod
 	public void setUp() {
-		String path=System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", path+"//resources//chromedriver.exe");
+		String path = System.getProperty("user.dir");
+		System.setProperty("webdriver.chrome.driver", path + "//resources//chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://demo.actitime.com");
 	}
@@ -26,8 +25,10 @@ public class LoginPageTest extends BaseClass {
 	}
 
 	@Test
-	public void verify() {
-		Assert.assertEquals(false, true);
+	public void verifyPageTitle() {
+		String expectedPageTitle = "actiTIME - Login";
+		String pageTitle = driver.getTitle();
+		Assert.assertEquals(pageTitle, expectedPageTitle);
 	}
 
 }

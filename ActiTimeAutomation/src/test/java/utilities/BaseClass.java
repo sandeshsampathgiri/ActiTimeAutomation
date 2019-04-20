@@ -20,7 +20,7 @@ public class BaseClass {
 		driver.get("https://demo.actitime.com");
 	}
 	
-	public void failed(String methodName) throws IOException
+	public void captureScreenshot(String methodName) throws IOException
 	{
 		String screenshotPath=System.getProperty("user.dir");
 		
