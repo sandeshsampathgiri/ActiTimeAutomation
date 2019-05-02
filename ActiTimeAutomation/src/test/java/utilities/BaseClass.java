@@ -13,19 +13,28 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class BaseClass {
 
 	public static WebDriver driver;
+	public static ChromeOptions options;
 
-	public static void initialization() {
-		System.setProperty("webdriver.chrome.driver", "E:\\chromedriver_win32\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("https://demo.actitime.com");
+	public void captureScreenshot(String methodName) throws IOException {
+		String screenshotPath = System.getProperty("user.dir");
+
+		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(srcFile,
+				new File(screenshotPath + "\\executionScreenshots\\" + methodName + "_Screenshot.png"));
 	}
-	
-	public void captureScreenshot(String methodName) throws IOException
-	{
-		String screenshotPath=System.getProperty("user.dir");
-		
-			File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(srcFile, new File(screenshotPath+"\\executionScreenshots\\"+methodName+"_Screenshot.png"));
+
+	public void openChromeBrowser() {
+		String path = System.getProperty("user.dir");
+		System.setProperty("webdriver.chrome.driver", path + "//resources//chromedriver.exe");
+		options = new ChromeOptions();
+		options.addArguments("--incognito");
+		options.addArguments("--disable-notifications");
+		options.addArguments("--disable-infobars");
+		// options.addArguments("start-maximized");
+		options.setAcceptInsecureCerts(true);
+
+		driver = new ChromeDriver(options);
+		driver.get("https://demo.actitime.com");
 	}
 
 }

@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="12976" started-at="2019-04-20T10:55:36Z" finished-at="2019-04-20T10:55:49Z">
+  <suite name="Suite" duration-ms="36992" started-at="2019-05-02T23:06:04Z" finished-at="2019-05-02T23:06:41Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12976" started-at="2019-04-20T10:55:36Z" finished-at="2019-04-20T10:55:49Z">
+    <test name="Test" duration-ms="36992" started-at="2019-05-02T23:06:04Z" finished-at="2019-05-02T23:06:41Z">
       <class name="actitimeTests.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@14bf9759]" name="setUp" is-config="true" duration-ms="11257" started-at="2019-04-20T10:55:36Z" finished-at="2019-04-20T10:55:47Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@14bf9759]" name="setUp" is-config="true" duration-ms="12237" started-at="2019-05-02T23:06:04Z" finished-at="2019-05-02T23:06:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPageTitle()[pri:0, instance:actitimeTests.LoginPageTest@14bf9759]" name="verifyPageTitle" duration-ms="37" started-at="2019-04-20T10:55:47Z" finished-at="2019-04-20T10:55:47Z">
+        <test-method status="PASS" signature="verifyAdminLogin()[pri:0, instance:actitimeTests.LoginPageTest@14bf9759]" name="verifyAdminLogin" duration-ms="8528" started-at="2019-05-02T23:06:16Z" finished-at="2019-05-02T23:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@14bf9759]" name="tearDown" is-config="true" duration-ms="2190" started-at="2019-05-02T23:06:25Z" finished-at="2019-05-02T23:06:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@14bf9759]" name="setUp" is-config="true" duration-ms="10344" started-at="2019-05-02T23:06:27Z" finished-at="2019-05-02T23:06:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyPageTitle()[pri:0, instance:actitimeTests.LoginPageTest@14bf9759]" name="verifyPageTitle" duration-ms="22" started-at="2019-05-02T23:06:37Z" finished-at="2019-05-02T23:06:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@14bf9759]" name="tearDown" is-config="true" duration-ms="791" started-at="2019-04-20T10:55:48Z" finished-at="2019-04-20T10:55:49Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@14bf9759]" name="tearDown" is-config="true" duration-ms="2194" started-at="2019-05-02T23:06:38Z" finished-at="2019-05-02T23:06:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
