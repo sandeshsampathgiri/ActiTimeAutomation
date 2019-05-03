@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPageObject {
 
@@ -16,9 +17,12 @@ public class LoginPageObject {
 	public static By password = By.xpath("//input[@name='pwd']");
 	public static By loginBtn = By.xpath("(//div[contains(text(),'Login')])[1]");
 	public static By logoutLnk = By.id("logoutLink");
+	public static By exploreActiTime_locator = By.xpath("//span[@class='Start exploring actiTIME']");
+	public static By enterTimeTrack = By.xpath("//td[contains(text(),'Enter Time-Track')]");
+	public static By invalidCredentials = By.xpath("//span[contains(text(),'Username or Password is invalid')]");
 
 	public WebElement findUsername(WebDriver driver) {
-		System.out.println("Driver="+driver);
+		System.out.println("Driver=" + driver);
 		return driver.findElement(username);
 	}
 
@@ -31,7 +35,21 @@ public class LoginPageObject {
 		return driver.findElement(loginBtn);
 
 	}
+
+	public WebElement clickExploreActiTimeBtn(WebDriver driver) {
+		return driver.findElement(exploreActiTime_locator);
+
+	}
+
+	public WebElement verifyenterTimeTrackTxt(WebDriver driver) {
+		return driver.findElement(enterTimeTrack);
+	}
 	
+	public WebElement verifyValidationMsgWithInvalidCredentials(WebDriver driver)
+	{
+		return driver.findElement(invalidCredentials);
+	}
+
 	/*
 	 * public WebElement verifyLogoutBtn(WebDriver driver) { return
 	 * driver.findElement(logoutLnk); }

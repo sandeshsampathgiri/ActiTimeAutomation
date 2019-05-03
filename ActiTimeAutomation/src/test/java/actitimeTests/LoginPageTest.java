@@ -44,9 +44,9 @@ public class LoginPageTest extends BaseClass {
 	@Test
 	public void verifyAdminLogin() throws InterruptedException {
 
-		By username_locator = By.xpath("//input[@name='username']");
+		// By username_locator = By.xpath("//input[@name='username']");
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.presenceOfElementLocated(username_locator));
+		wait.until(ExpectedConditions.presenceOfElementLocated(lpo.username));
 
 		lpo.findUsername(driver).sendKeys("admin");
 		lpo.findPassword(driver).sendKeys("manager");
@@ -59,4 +59,76 @@ public class LoginPageTest extends BaseClass {
 		Assert.assertEquals(status, true);
 	}
 
+	@Test
+	public void verifyTraineeLoginTest() {
+		// By username_locator = By.xpath("//input[@name='username']");
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(lpo.username));
+
+		lpo.findUsername(driver).sendKeys("trainee");
+		lpo.findPassword(driver).sendKeys("trainee");
+		lpo.clickLoginBtn(driver).click();
+
+		WebDriverWait wait2 = new WebDriverWait(driver, 20);
+		wait2.until(ExpectedConditions.presenceOfElementLocated(lpo.enterTimeTrack));
+		boolean loginStatus = lpo.verifyenterTimeTrackTxt(driver).isDisplayed();
+		Assert.assertEquals(loginStatus, true);
+
+	}
+
+	@Test
+	public void verifyValidationMsgWithInvalidLoginTest() {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(lpo.username));
+
+		lpo.findUsername(driver).sendKeys("sandesh");
+		lpo.findPassword(driver).sendKeys("sandesh");
+		lpo.clickLoginBtn(driver).click();
+
+		WebDriverWait wait1 = new WebDriverWait(driver, 10);
+		wait1.until(ExpectedConditions.presenceOfElementLocated(lpo.invalidCredentials));
+
+	}
+
+	@Test
+	public void verifyValidationMsgWithoutUsernameTest() {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(lpo.username));
+
+		// lpo.findUsername(driver).sendKeys("sandesh");
+		lpo.findPassword(driver).sendKeys("sandesh");
+		lpo.clickLoginBtn(driver).click();
+
+		WebDriverWait wait1 = new WebDriverWait(driver, 10);
+		wait1.until(ExpectedConditions.presenceOfElementLocated(lpo.invalidCredentials));
+
+	}
+
+	@Test
+	public void verifyValidationMsgWithoutPasswordTest() {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(lpo.username));
+
+		lpo.findUsername(driver).sendKeys("sandesh");
+		// lpo.findPassword(driver).sendKeys("sandesh");
+		lpo.clickLoginBtn(driver).click();
+
+		WebDriverWait wait1 = new WebDriverWait(driver, 10);
+		wait1.until(ExpectedConditions.presenceOfElementLocated(lpo.invalidCredentials));
+
+	}
+
+	@Test
+	public void verifyValidationMsgWithoutCredentialsTest() {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(lpo.username));
+
+		// lpo.findUsername(driver).sendKeys("sandesh");
+		// lpo.findPassword(driver).sendKeys("sandesh");
+		lpo.clickLoginBtn(driver).click(); 
+
+		WebDriverWait wait1 = new WebDriverWait(driver, 10);
+		wait1.until(ExpectedConditions.presenceOfElementLocated(lpo.invalidCredentials));
+
+	}
 }

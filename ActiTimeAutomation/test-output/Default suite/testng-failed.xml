@@ -5,8 +5,8 @@
     <classes>
       <class name="actitimeTests.LoginPageTest">
         <methods>
+          <include name="verifyTraineeLoginTest"/>
           <include name="setUp"/>
-          <include name="verifyLogo"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- actitimeTests.LoginPageTest -->
