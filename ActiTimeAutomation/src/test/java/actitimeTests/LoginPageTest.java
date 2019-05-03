@@ -1,18 +1,13 @@
 package actitimeTests;
 
-import java.util.concurrent.TimeUnit;
-
-import org.apache.http.auth.UsernamePasswordCredentials;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import pageObjects.LoginPageObject;
 import utilities.BaseClass;
@@ -21,6 +16,7 @@ public class LoginPageTest extends BaseClass {
 
 	LoginPageObject lpo;
 	LoginPageTest lpt;
+	SoftAssert softAssert;
 
 	@BeforeMethod
 	public void setUp() {
@@ -125,10 +121,38 @@ public class LoginPageTest extends BaseClass {
 
 		// lpo.findUsername(driver).sendKeys("sandesh");
 		// lpo.findPassword(driver).sendKeys("sandesh");
-		lpo.clickLoginBtn(driver).click(); 
+		lpo.clickLoginBtn(driver).click();
 
 		WebDriverWait wait1 = new WebDriverWait(driver, 10);
 		wait1.until(ExpectedConditions.presenceOfElementLocated(lpo.invalidCredentials));
+
+	}
+
+	@Test
+	public void verifyLogoutTest() {
+
+		softAssert = new SoftAssert();
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(lpo.username));
+
+		lpo.findUsername(driver).sendKeys("admin");
+		lpo.findPassword(driver).sendKeys("manager");
+		lpo.clickLoginBtn(driver).click();
+
+		WebDriverWait wait1 = new WebDriverWait(driver, 20);
+		wait1.until(ExpectedConditions.presenceOfElementLocated(lpo.logoutLnk));
+		String expectedHomePageTitle = "actiTIME - Enter Time-Track";
+		String actualHomePageTitle = driver.getTitle();
+		softAssert.assertEquals(actualHomePageTitle, expectedHomePageTitle);
+		lpo.verifyLogoutBtn(driver).click();
+
+		WebDriverWait wait2 = new WebDriverWait(driver, 20);
+		wait2.until(ExpectedConditions.presenceOfElementLocated(lpo.username));
+		String expectedLoginPageTitle = "actiTIME - Login";
+		String actualLoginPageTitle = driver.getTitle();
+		softAssert.assertEquals(actualLoginPageTitle, expectedLoginPageTitle);
+
+		softAssert.assertAll();
 
 	}
 }

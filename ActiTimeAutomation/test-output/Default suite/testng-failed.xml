@@ -5,7 +5,7 @@
     <classes>
       <class name="actitimeTests.LoginPageTest">
         <methods>
-          <include name="verifyTraineeLoginTest"/>
+          <include name="verifyLogoutTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

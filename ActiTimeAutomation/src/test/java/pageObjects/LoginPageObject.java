@@ -16,7 +16,7 @@ public class LoginPageObject {
 	public static By username = By.xpath("//input[@name='username']");
 	public static By password = By.xpath("//input[@name='pwd']");
 	public static By loginBtn = By.xpath("(//div[contains(text(),'Login')])[1]");
-	public static By logoutLnk = By.id("logoutLink");
+	public static By logoutLnk = By.xpath("//a[contains(text(),'Logout')]");
 	public static By exploreActiTime_locator = By.xpath("//span[@class='Start exploring actiTIME']");
 	public static By enterTimeTrack = By.xpath("//td[contains(text(),'Enter Time-Track')]");
 	public static By invalidCredentials = By.xpath("//span[contains(text(),'Username or Password is invalid')]");
@@ -50,9 +50,10 @@ public class LoginPageObject {
 		return driver.findElement(invalidCredentials);
 	}
 
-	/*
-	 * public WebElement verifyLogoutBtn(WebDriver driver) { return
-	 * driver.findElement(logoutLnk); }
-	 */
+	
+	 public WebElement verifyLogoutBtn(WebDriver driver) { 
+		 return  driver.findElement(logoutLnk); 
+	 }
+	 
 
 }
