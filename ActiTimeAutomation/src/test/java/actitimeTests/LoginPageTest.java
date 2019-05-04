@@ -155,4 +155,18 @@ public class LoginPageTest extends BaseClass {
 		softAssert.assertAll();
 
 	}
+	
+	@Test
+	public void verifyForgotPasswordTest()
+	{
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(lpo.username));
+
+		lpo.verifyForgotPwd(driver).click();
+		
+		boolean headerDisplayed = lpo.verifyForgotPwdHeader(driver).isDisplayed();
+		Assert.assertTrue(headerDisplayed);
+		
+		
+	}
 }

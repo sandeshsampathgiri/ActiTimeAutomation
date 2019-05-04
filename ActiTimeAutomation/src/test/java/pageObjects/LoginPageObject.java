@@ -20,6 +20,8 @@ public class LoginPageObject {
 	public By exploreActiTime_locator = By.xpath("//span[@class='Start exploring actiTIME']");
 	public By enterTimeTrack = By.xpath("//td[contains(text(),'Enter Time-Track')]");
 	public By invalidCredentials = By.xpath("//span[contains(text(),'Username or Password is invalid')]");
+	public By forgotPwd = By.xpath("//a[contains(text(),'Forgot your password')]");
+	public By forgotPwdHdr = By.xpath("//div[contains(text(),'Please enter email address or username')]");
 
 	public WebElement findUsername(WebDriver driver) {
 		System.out.println("Driver=" + driver);
@@ -55,5 +57,14 @@ public class LoginPageObject {
 		 return  driver.findElement(logoutLnk); 
 	 }
 	 
+	 public WebElement verifyForgotPwd(WebDriver driver)
+	 {
+		 return driver.findElement(forgotPwd);
+	 }
+	 
+	 public WebElement verifyForgotPwdHeader(WebDriver driver)
+	 {
+		 return driver.findElement(forgotPwdHdr);
+	 }
 
 }

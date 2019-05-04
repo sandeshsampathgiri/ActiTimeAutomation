@@ -1,109 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="139657" started-at="2019-05-03T00:35:58Z" finished-at="2019-05-03T00:38:17Z">
+  <suite name="Default suite" duration-ms="189625" started-at="2019-05-04T16:39:15Z" finished-at="2019-05-04T16:42:25Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="139657" started-at="2019-05-03T00:35:58Z" finished-at="2019-05-03T00:38:17Z">
+    <test name="Default test" duration-ms="189625" started-at="2019-05-04T16:39:15Z" finished-at="2019-05-04T16:42:25Z">
       <class name="actitimeTests.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="12511" started-at="2019-05-03T00:35:58Z" finished-at="2019-05-03T00:36:10Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="setUp" is-config="true" duration-ms="17542" started-at="2019-05-04T16:39:15Z" finished-at="2019-05-04T16:39:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyAdminLogin()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="verifyAdminLogin" duration-ms="8772" started-at="2019-05-03T00:36:10Z" finished-at="2019-05-03T00:36:19Z">
+        <test-method status="PASS" signature="verifyAdminLogin()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="verifyAdminLogin" duration-ms="11350" started-at="2019-05-04T16:39:33Z" finished-at="2019-05-04T16:39:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAdminLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="2172" started-at="2019-05-03T00:36:19Z" finished-at="2019-05-03T00:36:21Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="2451" started-at="2019-05-04T16:39:44Z" finished-at="2019-05-04T16:39:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="10429" started-at="2019-05-03T00:36:21Z" finished-at="2019-05-03T00:36:32Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="setUp" is-config="true" duration-ms="12211" started-at="2019-05-04T16:39:47Z" finished-at="2019-05-04T16:39:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLogoutTest()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="verifyLogoutTest" duration-ms="11359" started-at="2019-05-03T00:36:32Z" finished-at="2019-05-03T00:36:43Z">
+        <test-method status="PASS" signature="verifyForgotPasswordTest()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="verifyForgotPasswordTest" duration-ms="884" started-at="2019-05-04T16:39:59Z" finished-at="2019-05-04T16:40:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="2566" started-at="2019-05-04T16:40:00Z" finished-at="2019-05-04T16:40:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="setUp" is-config="true" duration-ms="16644" started-at="2019-05-04T16:40:02Z" finished-at="2019-05-04T16:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLogoutTest()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="verifyLogoutTest" duration-ms="17642" started-at="2019-05-04T16:40:19Z" finished-at="2019-05-04T16:40:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogoutTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="330" started-at="2019-05-03T00:36:44Z" finished-at="2019-05-03T00:36:44Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="219" started-at="2019-05-04T16:40:37Z" finished-at="2019-05-04T16:40:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="11511" started-at="2019-05-03T00:36:44Z" finished-at="2019-05-03T00:36:55Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="setUp" is-config="true" duration-ms="13771" started-at="2019-05-04T16:40:37Z" finished-at="2019-05-04T16:40:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPageTitle()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="verifyPageTitle" duration-ms="28" started-at="2019-05-03T00:36:55Z" finished-at="2019-05-03T00:36:55Z">
+        <test-method status="PASS" signature="verifyPageTitle()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="verifyPageTitle" duration-ms="26" started-at="2019-05-04T16:40:51Z" finished-at="2019-05-04T16:40:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="2156" started-at="2019-05-03T00:36:56Z" finished-at="2019-05-03T00:36:59Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="2134" started-at="2019-05-04T16:40:51Z" finished-at="2019-05-04T16:40:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="11108" started-at="2019-05-03T00:36:59Z" finished-at="2019-05-03T00:37:10Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="setUp" is-config="true" duration-ms="10925" started-at="2019-05-04T16:40:53Z" finished-at="2019-05-04T16:41:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyTraineeLoginTest()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="verifyTraineeLoginTest" duration-ms="8326" started-at="2019-05-03T00:37:10Z" finished-at="2019-05-03T00:37:18Z">
+        <test-method status="PASS" signature="verifyTraineeLoginTest()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="verifyTraineeLoginTest" duration-ms="13759" started-at="2019-05-04T16:41:04Z" finished-at="2019-05-04T16:41:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTraineeLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="217" started-at="2019-05-03T00:37:18Z" finished-at="2019-05-03T00:37:19Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="2278" started-at="2019-05-04T16:41:18Z" finished-at="2019-05-04T16:41:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="11016" started-at="2019-05-03T00:37:19Z" finished-at="2019-05-03T00:37:30Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="setUp" is-config="true" duration-ms="12467" started-at="2019-05-04T16:41:20Z" finished-at="2019-05-04T16:41:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyValidationMsgWithInvalidLoginTest()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="verifyValidationMsgWithInvalidLoginTest" duration-ms="3449" started-at="2019-05-03T00:37:30Z" finished-at="2019-05-03T00:37:33Z">
+        <test-method status="PASS" signature="verifyValidationMsgWithInvalidLoginTest()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="verifyValidationMsgWithInvalidLoginTest" duration-ms="4183" started-at="2019-05-04T16:41:32Z" finished-at="2019-05-04T16:41:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidationMsgWithInvalidLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="246" started-at="2019-05-03T00:37:33Z" finished-at="2019-05-03T00:37:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="368" started-at="2019-05-04T16:41:37Z" finished-at="2019-05-04T16:41:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="10343" started-at="2019-05-03T00:37:34Z" finished-at="2019-05-03T00:37:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="setUp" is-config="true" duration-ms="11684" started-at="2019-05-04T16:41:37Z" finished-at="2019-05-04T16:41:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyValidationMsgWithoutCredentialsTest()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="verifyValidationMsgWithoutCredentialsTest" duration-ms="2524" started-at="2019-05-03T00:37:44Z" finished-at="2019-05-03T00:37:46Z">
+        <test-method status="PASS" signature="verifyValidationMsgWithoutCredentialsTest()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="verifyValidationMsgWithoutCredentialsTest" duration-ms="3252" started-at="2019-05-04T16:41:49Z" finished-at="2019-05-04T16:41:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidationMsgWithoutCredentialsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="193" started-at="2019-05-03T00:37:47Z" finished-at="2019-05-03T00:37:47Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="197" started-at="2019-05-04T16:41:52Z" finished-at="2019-05-04T16:41:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="10626" started-at="2019-05-03T00:37:47Z" finished-at="2019-05-03T00:37:58Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="setUp" is-config="true" duration-ms="12499" started-at="2019-05-04T16:41:52Z" finished-at="2019-05-04T16:42:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyValidationMsgWithoutPasswordTest()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="verifyValidationMsgWithoutPasswordTest" duration-ms="3284" started-at="2019-05-03T00:37:58Z" finished-at="2019-05-03T00:38:01Z">
+        <test-method status="PASS" signature="verifyValidationMsgWithoutPasswordTest()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="verifyValidationMsgWithoutPasswordTest" duration-ms="3423" started-at="2019-05-04T16:42:05Z" finished-at="2019-05-04T16:42:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidationMsgWithoutPasswordTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="299" started-at="2019-05-03T00:38:01Z" finished-at="2019-05-03T00:38:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="269" started-at="2019-05-04T16:42:08Z" finished-at="2019-05-04T16:42:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="11492" started-at="2019-05-03T00:38:02Z" finished-at="2019-05-03T00:38:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="setUp" is-config="true" duration-ms="13068" started-at="2019-05-04T16:42:08Z" finished-at="2019-05-04T16:42:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyValidationMsgWithoutUsernameTest()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="verifyValidationMsgWithoutUsernameTest" duration-ms="3047" started-at="2019-05-03T00:38:13Z" finished-at="2019-05-03T00:38:16Z">
+        <test-method status="PASS" signature="verifyValidationMsgWithoutUsernameTest()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="verifyValidationMsgWithoutUsernameTest" duration-ms="3441" started-at="2019-05-04T16:42:21Z" finished-at="2019-05-04T16:42:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidationMsgWithoutUsernameTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="667" started-at="2019-05-03T00:38:17Z" finished-at="2019-05-03T00:38:17Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actitimeTests.LoginPageTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="279" started-at="2019-05-04T16:42:25Z" finished-at="2019-05-04T16:42:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- actitimeTests.LoginPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
